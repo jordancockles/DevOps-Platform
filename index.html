@@ -1,0 +1,332 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>DevOps Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A suite of DevOps tooling">
+    <meta name="author" content="Jordan Cockles">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <header>
+        <nav>
+        <h1>DevOps Platform</h1>
+        <ul>
+            <li id="aboutButton" class="opened">About</li>
+            <li id="contactButton">Contact</li>
+            <li id="adminButton">Admin</li>
+        </ul>
+        </nav>
+    </header>
+    <div id="aboutPanel" class="extendablePanel">
+        <div class="panelContent">
+            <h2>"Smarter Planning, Greater Collaboration, Faster Deliveries"</h2>
+            <h1> Welcome to the DevOps Platform </h1>
+            </br>
+            <p>The DevOps platform is a suite of tooling designed and applied in a way that enables the utilisation and engagement of the DevOps ideology.
+            This platform is available to use for any project in an organisation and aims to give projects the capacity for smarter planning, greater collaboration
+            and faster deliveries of software. This means projects can spend more time improving their processes and generate more business value.</p>
+            </br>
+            <h2>What is DevOps?</h2>
+            </br>
+            <p>DevOps is a culture of people that engage in a mindset of agility and continuous improvement. They do this by leveraging tooling and processes
+            that will increase collaboration between teams and increase the velocity of product delivery. By engaging in this philosophy, an organisation can 
+            respond to changing requirements with greater agility and provide more business value with every product delivery.</p>
+        </div>
+    </div>
+    <div id="contactPanel" class="extendablePanel">
+        <div class="panelContent">
+            <h1>The DevOps Support Team</h1>
+            <div class="teamMember">
+                <img src="img/profile-pic.png"></img>
+                <h2>Member One</h2>
+                <p>Team Lead</p>
+                <p>Member.One@email.co.uk</p>
+            </div>
+            <div class="teamMember">
+                <img src="img/profile-pic.png"></img>
+                <h2>Member Two</h2>
+                <p>Team Member</p>
+                <p>Member.Two@email.co.uk</p>
+            </div>
+            <div class="teamMember">
+                <img src="img/profile-pic.png"></img>
+                <h2>Member Three</h2>
+                <p>Team Member</p>
+                <p>Member.Three@email.co.uk</p>
+            </div>
+            <div class="teamMember">
+                <img src="img/profile-pic.png"></img>
+                <h2>Member Four</h2>
+                <p>Team Member</p>
+                <p>Member.Four@email.co.uk</p>
+            </div>
+            <p>If you have any questions or would like to get on boarded to the DevOps platform, please contact the DevOps support team</p>
+            <div class="button">Contact Us</div>
+        </div>
+    </div>
+    <div id="adminPanel" class="extendablePanel">
+        <div class="panelContent">
+            <h1>Administration Tooling</h1>
+            <div class="adminTool">
+                <img src="img/crowd-logo.png"></img>
+                <h2>Crowd</h2>
+            </div>
+            <div class="adminTool">
+                <img src="img/ldap-logo.png"></img>
+                <h2>Open LDAP</h2>
+            </div>
+        </div>
+    </div>
+    <div class="tooling">
+        <div id="gerrit" class="toolButton"><img src="../img/gerrit-logo.png"><p>Gerrit</p></div>
+        <div id="jenkins" class="toolButton"><img src="../img/jenkins-logo.png"><p>Jenkins</p></div>
+        <div id="sonar" class="toolButton"><img src="../img/sonar-logo.png"><p>SonarQube</p></div>
+        <div id="nexus" class="toolButton"><img src="../img/nexus-logo.png"><p>Nexus</p></div>
+        <div id="kibana" class="toolButton"><img src="../img/kibana-logo.png"><p>Kibana</p></div>
+        <div id="selenium" class="toolButton"><img src="../img/selenium-logo.png"><p>Selenium</p></div>
+        <div id="sensu" class="toolButton"><img src="../img/sensu-logo.png"><p>Sensu</p></div>
+        <div id="jira" class="toolButton"><img src="../img/jira-logo.png"><p>JIRA</p></div>
+        <div id="confluence" class="toolButton"><img src="../img/confluence-logo.png"><p>Confluence</p></div>
+    </div>
+<script src="js/index.js"></script>
+</body>
+    <div id="gerritPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Gerrit</h1>
+            <img src="../img/gerrit-logo.png">
+            <p>Gerrit is a source code management and collaboration tool. It allows teams to centralise source code in a single location providing 
+            projects with a "single source of truth" for application source code. Source code management (SCM) is where modifications to source 
+            code is tracked and a running history of the changes to the code is maintained, thus allowing there to be a continuous audit trail of how the 
+            code has evolved over time.</p>
+
+            <p>SCM solves several key problems with application development. Over time, multiple contributors alter the source code and the complexity of 
+            the project increases. As edits are made to the source code the developers need to merge their code changes together and resolve conflicts.
+            When done manually, this is a very time consuming and complicated process. SCM tools like Gerrit perform all the heavy lifting on detecting
+            conflicts during merges and safeguards the centralised version of source code from merge errors.</p>
+
+            <p>Other benefits of using Gerrit for source code management include:</p>
+            <ul>
+                <li>Code review By peers ensuring code quality</li>
+                <li>Tagging & labelling for easy traceability</li>
+                <li>Branching for managing code variants</li>
+                <li>Key starting point for continuous integration</li>
+                <li>Revert to previous versions of code</li>
+                <li>Every commit has an author</li>
+            </ul>
+            <div class="button">Go To Gerrit</div>
+        </div>
+    </div>
+    <div id="jenkinsPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Jenkins</h1>
+            <img src="../img/jenkins-logo.png">
+            <p>Jenkins is an automation tool. Its predominant purpose is enabling the use of continuous delivery for software development projects. Continous delivery
+            is where software is automatically built, tested and released. This enables teams to reliably release software in shorter cycles and at any time. The aim
+            is to increase the frequency and speed of software delivery which reduces the cost, time and risk of delivering changes.<p>
+
+            <p>In its purest form, continuous delivery can detect a code change in a source code repository and automate its delivery into the production system. This
+            is achieved when there is full trust and confidence in the delivery pipeline. Trust gained through a rigorous approach to fully automating the required
+            testing and analysis of the code change through QA, SIT and UAT.</p>
+
+            <p>Other benefits of using Jenkins include:</p>
+            <ul>
+                <li>Flexible automation for deployments to most platforms</li>
+                <li>Integrates with most testing frameworks including jUnit, Selenium and Cypress</li>
+                <li>Can be used to build several types of applications including .NET, Maven & Java</li>
+                <li>Can automate server configuration enabling server hardening</li>
+                <li>Highly customizable automation from CI/CD to infrastructure as code deployment</li>
+                <li>Currently deploying to Windows, Linux, Appian, Mulesoft, Acquia</li>
+            </ul>
+            <div class="button">Go To Jenkins</div>
+        </div>
+    </div>
+    <div id="sonarPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>SonarQube</h1>
+            <img src="../img/sonar-logo.png">
+            <p>SonarQube is a code quality analysis tool. It allows for the scanning of source code and produces a comprehensive report describing the "hygiene" of the code.
+            The report will highlight where there are any critical issues in the code that could cause security vulnerabilities or functional errors with the application.
+            In addition to this it will also highlight any code sniffs where the code does not adhere to standardised best practice of code development.</p>
+
+            <p>The purpose of verifying the quality of source code is to ensure that any critical issues are detected before they are introduced to a production
+            environment and also ensures that the developers adhere to a common coding practice. Having a standardised code format ensures that it remains maintainable
+            throughout the lifecycle of the software. When the scan is baked into a continuous delivery pipeline it ensures that any issues with the code are detected
+            often resulting in the reduction of tecnical debt.</p>
+
+            <p>Other benefits of using SonarQube include:</p>
+            <ul>
+                <li>Quality gates prevent poor quality code being deployed</li>
+                <li>Reduces complexity, vulnerabilities and duplications</li>
+                <li>Reduces time spent retrospectivley correcting code</li>
+                <li>Customisable quality profiles and gates enables fine tuning of agreeable code quality</li>
+                <li>Regular feedback helps developers improve their coding quality latently</li>
+                <li>Increase confidence in CI/CD process</li>
+            </ul>
+            <div class="button">Go To SonarQube</div>
+        </div>
+    </div>
+    <div id="nexusPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Nexus</h1>
+            <img src="../img/nexus-logo.png">
+            <p>SonarQube is a repository manager. It allows for the archiving and versioning of artifacts and binaries such as exe, jar, pom and zip files.
+            It also manages the dependencies of a project that use public dependency repositories including Maven and Nuget. It also connects to private
+            dependency repositories that are vendor provided.</p>
+
+            <p>The primary purpose of Nexus is to have a place where all of a projects dependencies and artifacts are centrally located. This allows for
+            easier access to the artifacts when using CI/CD for deployments and ensures there is an audit of historical versions of applications. It also
+            means there is one central repository that the CI/CD pipelines can use for retrieving project dependencies.</p>
+
+            <p>Other benefits of using Nexus include:</p>
+            <ul>
+                <li>Cached dependencies means faster builds</li>
+                <li>Predicatbility and stability as cached dependencies do not need the external repository to be available</li>
+                <li>Bandwidth savings as there are less connection requests to external repositories</li>
+                <li>Control and auditing of application artifacts</li>
+                <li>Customisable internal repositories to seperate different projects</li>
+                <li>Centralisation means less network connectivity changes</li>
+            </ul>
+            <div class="button">Go To Nexus</div>
+        </div>
+    </div>
+    <div id="kibanaPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Kibana</h1>
+            <img src="../img/kibana-logo.png">
+            <p>Kibana is the front end of the Elastic stack. The Elastic Stack is a suite of products that aims to take data from any source and allow users
+            to format, search, analyze and visualise the data in real time. The Elastic Stack is highly flexible in the data that it can process and standardised
+            data can be provided through the use of Elastic Beats. The Elastic Beats are Metricbeat; which provides data based on machine resource usage including
+            CPU and disk space, Filebeat; which reads logs and as they are updated processes each new line of the log, Packetbeat; which analyses network packets
+            monitoring the traffic between servers, Auditbeat; which monitors user activity and analyzes event data and Heartbeat; which monitors the uptime of
+            applications and services.</p>
+
+            <p>The primary purpose of the Elastic Stack is to provide visualisations on data so that teams can make educated decisions based on the analysed data.
+            It can also be used to produce dashboards for continuous monitoring, enabling for more visible and easier to manage operations.</p>
+
+            <p>Other benefits of using SonarQube include:</p>
+            <ul>
+                <li>High flexibility allows for highly customised visualisations and dashboards</li>
+                <li>Securely pull, analyze and visualize data, in real time, from any source and format.</li>
+                <li>Centralized logging to help identify any server and application-related issues across multiple servers</li>
+                <li>Visualisations allow for faster troubleshooting of issues</li>
+                <li>Use full text to search through data</li>
+                <li>Process and transforming data to fine tune how data is displayed</li>
+            </ul>
+            <div class="button">Go To Kibana</div>
+        </div>
+    </div>
+    <div id="seleniumPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Selenium</h1>
+            <img src="../img/selenium-logo.png">
+            <p>Selenium is an automated testing framework that validates web applications across different browsers and platforms. It is used for end to end testing
+            where the interactions such as selecting buttons and filling in forms in a web browser are automated. Selenium tests can be developed in multiple
+            programming languages including Java, and Python. </p>
+
+            <p>The primary purpose of Selenium is to enable more frequent and consistent testing of browser applications. This, when integrated into CI/CD pipelines,
+            allows for the increased velocity of software deliveries as testing is automatically performed instead of being done manually by a tester. The Selenium
+            tests will instantaneoulsy report if parts of the application are functioning as required.</p>
+
+            <p>Other benefits of using Selenium include:</p>
+            <ul>
+                <li>Performs testing on different browsers including Chrome, Firefox and IE</li>
+                <li>Multiple OS support including Windows and Linux</li>
+                <li>Test suites can be created to be reusable</li>
+                <li>Reduction of test execution time</li>
+                <li>Less hardware usage through centralised browser testing</li>
+                <li>Centralised Selenium node reduces issues caused by local machine testing</li>
+            </ul>
+            <div class="button">Go To Selenium</div>
+        </div>
+    </div>
+    <div id="sensuPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Sensu</h1>
+            <img src="../img/sensu-logo.png">
+            <p>Sensu is a monitoring tool that is used for alerting teams when there are issues with a service, application or server. It can be used for monitoring
+            systems including HTTP endpoints, resource utilisation on servers, services and network connectivity. When Sensu detects there is an issue with a system
+            it is monitoring it automatically sends a notification to pre-determined mail groups.</p>
+
+            <p>The primary purpose of Sensu monitoring is to detect issues early and ensure the first people to know about issues are the people that are capable
+            of analysing and resolving the issue rather than the users of the system. When paired with the Elastic stack which provides historical monitoring, it 
+            makes the detection, resolution and retrospectives of incidents easier to audit and quicker to complete.</p>
+
+            <p>Other benefits of using Sensu include:</p>
+            <ul>
+                <li>Monitor servers, services and application health</li>
+                <li>E-Mail notifications provides audit trail of outages and issues</li>
+                <li>Customisable E-Mail notifications</li>
+                <li>Reduction of time spent monitoring systems</li>
+                <li>Faster detection times of issues and outages</li>
+                <li>Customisable thresholds to define what is and isn't a critical issue</li>
+            </ul>
+            <div class="button">Go To Sensu</div>
+        </div>
+    </div>
+    <div id="jiraPanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Jira</h1>
+            <img src="../img/jira-logo.png">
+            <p>JIRA is an issue tracking tool and project management tool. It is used to enable agile project management through the usage of Kanban boards
+            with customisable workflows, effort and work estimation and several built in reports that visualise the status and progress of a project.</p>
+
+            <p>The primary purpose of JIRA is to give teams a centralised location where they can track the status of a variety of projects with differing
+            complexities. Smaller projects can leverage a simple Kanban board for tracking tasks and which team members are performing the tasks. Projects
+            with the aim of producing a software, application or system can utilise a more complex project that allows them to track stories, bugs and test
+            cases through the different stages of project development from backlog, development, SIT, UAT and done.</p>
+
+            <p>Other benefits of using JIRA include:</p>
+            <ul>
+                <li>Issues are tracked with a history of changes</li>
+                <li>Customisable workflows</li>
+                <li>Estimation and work logging</li>
+                <li>Progress reports</li>
+                <li>Scrum and kanban boards</li>
+                <li>E-Mail notifications</li>
+            </ul>
+            <div class="button">Go To Jira</div>
+        </div>
+    </div>
+    <div id="confluencePanel" class="extendableToolPanel">
+        <p class="close">&#10006;</p>
+        <div class="toolPanelContent">
+            <h1>Confluence</h1>
+            <img src="../img/confluence-logo.png">
+            <p>Confluence is a team workspace that centralises knowledge in teams and allows for the real time collaboration on wiki style pages.
+            It is used for the creation, collaboration and organisation of dynamic pages containing anything from knowledge transfer documentation
+            to organization structures.</p>
+
+            <p>Confluence is for teams of any size and type, from those with mission-critical, high-stakes projects that need rigor behind their 
+            practices, to those that are looking for a space to build team culture and engage with one another in a more open and authentic way.</p>
+
+            <p>Other benefits of using Confluence include:</p>
+            <ul>
+                <li>Multiple team members can collaborate on pages in real time</li>
+                <li>Pages and spaces are highly customisable and can be organised as required</li>
+                <li>Pages are version controlled maintaining a history of changes</li>
+                <li>Macros provide customisable page elements</li>
+                <li>Integration with JIRA projects</li>
+                <li>E-Mail notifications</li>
+            </ul>
+            <div class="button">Go To Confluence</div>
+        </div>
+    </div>
+</html>
